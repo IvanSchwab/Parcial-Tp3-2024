@@ -38,7 +38,7 @@
                 android:layout_alignParentBottom="true"
                 android:layout_alignParentStart="true"
                 android:layout_margin="18dp"
-                android:text="Paris"
+                android:text="@string/paris"
                 android:textColor="#FFFFFF"
                 android:textSize="24sp"
                 android:textStyle="bold" />
@@ -52,7 +52,7 @@
                 android:layout_alignParentEnd="true"
                 android:layout_marginBottom="70dp"
                 android:layout_marginEnd="18dp"
-                android:text="FROM"
+                android:text="@string/from"
                 android:textColor="#FFFFFF"
                 android:textSize="12sp"
                 android:textStyle="bold" />
@@ -66,7 +66,7 @@
                 android:layout_alignParentEnd="true"
                 android:layout_marginBottom="18dp"
                 android:layout_marginEnd="20dp"
-                android:text="$1299"
+                android:text="@string/_1299"
                 android:textColor="#FFFFFF"
                 android:textSize="30sp"
                 android:textStyle="bold" />
@@ -112,7 +112,7 @@
             android:id="@+id/text_flight"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Flight"
+            android:text="@string/flight"
             android:textColor="#000000"
             android:fontFamily="@font/inter"
             android:textSize="15sp"
@@ -134,7 +134,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Trending Destinations"
+                android:text="@string/trending_destinations"
                 android:fontFamily="@font/inter"
                 android:textSize="18sp"
                 android:textColor="#000000"
@@ -144,16 +144,13 @@
                 android:id="@+id/text_see_all"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="See all"
+                android:text="@string/see_all"
                 android:fontFamily="@font/inter"
                 android:textSize="14sp"
                 android:textColor="#1262AE"
                 android:textStyle="bold" />
 
         </LinearLayout>
-
-
-
 
     </LinearLayout>
 
@@ -168,7 +165,7 @@
         app:layout_constraintTop_toBottomOf="@id/trending">
 
         <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
             android:orientation="horizontal"
@@ -190,7 +187,7 @@
                     android:orientation="vertical"
                     android:padding="8dp">
 
-                    <!-- Image of Baros -->
+
                     <ImageView
                         android:layout_width="160dp"
                         android:layout_height="105dp"
@@ -201,7 +198,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Boracay"
+                        android:text="@string/boracay"
                         android:textColor="#000000"
                         android:textSize="16sp"
                         android:textStyle="bold" />
@@ -209,7 +206,7 @@
                     <TextView
                         android:layout_width="59dp"
                         android:layout_height="wrap_content"
-                        android:text="Philippines"
+                        android:text="@string/philippines"
                         android:textColor="#000000"
                         android:textSize="12sp" />
 
@@ -218,7 +215,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="end"
                         android:background="@drawable/gray_background"
-                        android:text="5D4N"
+                        android:text="@string/_5d4n"
                         android:textColor="#4D5760"
                         android:layout_marginTop="-25dp"
                         android:textSize="12sp" />
@@ -240,7 +237,7 @@
                     android:orientation="vertical"
                     android:padding="8dp">
 
-                    <!-- Image of Baros -->
+
                     <ImageView
                         android:layout_width="160dp"
                         android:layout_height="105dp"
@@ -248,32 +245,32 @@
                         android:scaleType="centerCrop"
                         android:src="@drawable/baros" />
 
-                    <!-- Text "Baros" -->
+
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
-                        android:text="Baros"
+                        android:text="@string/baros"
                         android:textColor="#000000"
                         android:textSize="16sp"
                         android:textStyle="bold" />
 
-                    <!-- Text "Maldives" -->
+
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
-                        android:text="Maldives"
+                        android:text="@string/maldives"
                         android:textColor="#000000"
                         android:textSize="14sp" />
 
-                    <!-- Text "Code: 1234" -->
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="end"
                         android:background="@drawable/gray_background"
-                        android:text="7D6N"
+                        android:text="@string/_7d6n"
                         android:layout_marginTop="-25dp"
                         android:textColor="#4D5760"
                         android:textSize="12sp" />
@@ -295,7 +292,7 @@
                     android:orientation="vertical"
                     android:padding="8dp">
 
-                    <!-- Image of Baros -->
+
                     <ImageView
                         android:layout_width="160dp"
                         android:layout_height="105dp"
@@ -303,32 +300,32 @@
                         android:scaleType="centerCrop"
                         android:src="@drawable/bali" />
 
-                    <!-- Text "Baros" -->
+
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
-                        android:text="Bali"
+                        android:text="@string/bali"
                         android:textColor="#000000"
                         android:textSize="16sp"
                         android:textStyle="bold" />
 
-                    <!-- Text "Maldives" -->
+
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
-                        android:text="Indonesia"
+                        android:text="@string/indonesia"
                         android:textColor="#000000"
                         android:textSize="14sp" />
 
-                    <!-- Text "Code: 1234" -->
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="end"
                         android:background="@drawable/gray_background"
-                        android:text="3D2N"
+                        android:text="@string/_3d2n"
                         android:layout_marginTop="-25dp"
                         android:textColor="#4D5760"
                         android:textSize="12sp" />
@@ -350,7 +347,7 @@
                     android:orientation="vertical"
                     android:padding="8dp">
 
-                    <!-- Image of Baros -->
+
                     <ImageView
                         android:layout_width="160dp"
                         android:layout_height="105dp"
@@ -358,32 +355,32 @@
                         android:scaleType="centerCrop"
                         android:src="@drawable/palawan" />
 
-                    <!-- Text "Baros" -->
+
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
-                        android:text="Palawan"
+                        android:text="@string/palawan"
                         android:textColor="#000000"
                         android:textSize="16sp"
                         android:textStyle="bold" />
 
-                    <!-- Text "Maldives" -->
+
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
-                        android:text="Philippines"
+                        android:text="@string/philippines"
                         android:textColor="#000000"
                         android:textSize="14sp" />
 
-                    <!-- Text "Code: 1234" -->
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="end"
                         android:background="@drawable/gray_background"
-                        android:text="3D2N"
+                        android:text="@string/_3d2n"
                         android:layout_marginTop="-25dp"
                         android:textColor="#4D5760"
                         android:textSize="12sp" />
@@ -399,7 +396,7 @@
         android:id="@+id/offersLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Offers"
+        android:text="@string/offers"
         android:textSize="20sp"
         android:textStyle="bold"
         android:layout_marginTop="24dp"
@@ -432,7 +429,7 @@
                 android:layout_height="wrap_content"
                 android:padding="@dimen/spacing_md">
 
-                <!-- Imagen de Mastercard -->
+
                 <ImageView
                     android:id="@+id/masterCardLogo"
                     android:layout_width="100dp"
@@ -440,7 +437,7 @@
                     android:layout_alignParentStart="true"
                     android:src="@drawable/mastercard" />
 
-                <!-- Texto: "20% discount for mastercard users" -->
+
                 <TextView
                     android:id="@+id/masterCardTitle"
                     android:layout_width="wrap_content"
@@ -448,11 +445,11 @@
                     android:layout_marginStart="@dimen/spacing_md"
                     android:layout_marginEnd="@dimen/spacing_md"
                     android:layout_toEndOf="@id/masterCardLogo"
-                    android:text="20% discount for Mastercard users"
+                    android:text="@string/_20_discount_for_mastercard_users"
                     android:textColor="@android:color/black"
                     android:textSize="16sp" />
 
-                <!-- Texto: "Limited time offer!" -->
+
                 <TextView
                     android:id="@+id/limitedTimeOffer"
                     android:layout_width="wrap_content"
@@ -461,7 +458,7 @@
                     android:layout_marginStart="@dimen/spacing_md"
                     android:layout_marginTop="@dimen/spacing_sm"
                     android:layout_toEndOf="@id/masterCardLogo"
-                    android:text="Limited time offer!"
+                    android:text="@string/limited_time_offer"
                     android:textColor="@color/blue"
                     android:textSize="12sp" />
 
@@ -480,7 +477,7 @@
                     android:layout_height="wrap_content"
                     android:padding="@dimen/spacing_md">
 
-                    <!-- Imagen de Mastercard -->
+
                     <ImageView
                         android:id="@+id/visaLogo"
                         android:layout_width="100dp"
@@ -488,7 +485,7 @@
                         android:layout_alignParentStart="true"
                         android:src="@drawable/visa" />
 
-                    <!-- Texto: "20% discount for mastercard users" -->
+
                     <TextView
                         android:id="@+id/visaTitle"
                         android:layout_width="wrap_content"
@@ -496,11 +493,11 @@
                         android:layout_marginStart="@dimen/spacing_md"
                         android:layout_marginEnd="@dimen/spacing_md"
                         android:layout_toEndOf="@id/visaLogo"
-                        android:text="25% discount with Visa credit cards"
+                        android:text="@string/_25_discount_with_visa_credit_cards"
                         android:textColor="@android:color/black"
                         android:textSize="16sp" />
 
-                    <!-- Texto: "Limited time offer!" -->
+
                     <TextView
                         android:id="@+id/limitedTimeOfferVisa"
                         android:layout_width="wrap_content"
@@ -509,7 +506,7 @@
                         android:layout_marginStart="@dimen/spacing_md"
                         android:layout_marginTop="@dimen/spacing_sm"
                         android:layout_toEndOf="@id/visaLogo"
-                        android:text="Limited time offer!"
+                        android:text="@string/limited_time_offer"
                         android:textColor="@color/blue"
                         android:textSize="12sp" />
 
