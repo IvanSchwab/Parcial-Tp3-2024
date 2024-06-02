@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="avatar_small">36dp</dimen>
+    <dimen name="avatar_medium">48dp</dimen>
+    <dimen name="avatar_large">84dp</dimen>
+    <dimen name="container_margin">16dp</dimen>
+</resources>

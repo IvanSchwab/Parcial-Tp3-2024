@@ -1,4 +1,12 @@
 <resources>
     <string name="app_name">Parcial-Tp3-2024</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="user_name_profile">Macy Johnson</string>
+    <string name="user_location_profile">Baguio, Philippines</string>
+    <string name="user_bio_profile">I like the beach, mountains, forest and everything about nature! :)</string>
+    <string name="payment_details_profile">Payment Details</string>
+    <string name="referral_code_profile">Referral Code</string>
+    <string name="new_badge_profile">NEW</string>
+    <string name="settings_profile">Settings</string>
+    <string name="logout_profile">Logout</string>
 </resources>
