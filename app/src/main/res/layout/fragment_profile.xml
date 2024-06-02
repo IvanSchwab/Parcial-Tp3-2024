@@ -57,7 +57,29 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            >
+
+            <FrameLayout
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_weight="0">
+
+                <View
+                    android:id="@+id/payment_container_profile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/icon_container_rounded_md" />
+
+                <ImageView
+                    android:id="@+id/credit_icon_profile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/credit_card_2"
+                    android:layout_gravity="center"/>
+
+            </FrameLayout>
 
             <TextView
                 android:id="@+id/paymentDetails"
@@ -65,13 +87,37 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="@string/payment_details_profile" />
+                android:text="@string/payment_details_profile"
+                android:layout_marginLeft="@dimen/spacing_md"
+                />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="@dimen/spacing_lg">
+
+            <FrameLayout
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_weight="0">
+
+                <View
+                    android:id="@+id/referal_container_profile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/icon_container_rounded_md"
+                    />
+
+                <ImageView
+                    android:id="@+id/referal_icon_profile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/user_asking"
+                    android:layout_gravity="center"/>
+            </FrameLayout>
 
             <TextView
                 android:id="@+id/referralCodeProfile"
@@ -79,7 +125,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="0"
-                android:text="@string/referral_code_profile" />
+                android:text="@string/referral_code_profile"
+                android:layout_marginLeft="@dimen/spacing_md"
+
+                />
 
             <TextView
                 android:id="@+id/newBadgeProfile"
@@ -89,19 +138,40 @@
                 android:layout_marginLeft="8dp"
                 android:layout_weight="0"
                 android:background="@drawable/text_view_rounded_md"
-                android:text="@string/new_badge_profile" />
+                android:text="@string/new_badge_profile"
+                android:textAppearance="@style/Overline"
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="0"
-                android:orientation="horizontal"></LinearLayout>
+                />
+
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/spacing_lg"
+            android:gravity="center_vertical"
+            >
+
+            <FrameLayout
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_weight="0">
+
+                <View
+                    android:id="@+id/settings_container_profile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/icon_container_rounded_md"
+                    />
+
+                <ImageView
+                    android:id="@+id/settings_icon_profile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/settings_line"
+                    android:layout_gravity="center"/>
+            </FrameLayout>
 
             <TextView
                 android:id="@+id/settingsProfile"
@@ -109,13 +179,38 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="@string/settings_profile" />
+                android:text="@string/settings_profile"
+                android:layout_marginLeft="@dimen/spacing_md"
+                />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/spacing_lg"
+            android:gravity="center_vertical"
+            >
+
+            <FrameLayout
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_weight="0">
+
+                <View
+                    android:id="@+id/logout_container_profile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/icon_container_rounded_md"
+                    />
+
+                <ImageView
+                    android:id="@+id/logout_icon_profile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/logout_half_circle_line"
+                    android:layout_gravity="center"/>
+            </FrameLayout>
 
             <TextView
                 android:id="@+id/stringLogout"
@@ -123,7 +218,9 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="@string/logout_profile" />
+                android:text="@string/logout_profile"
+                android:layout_marginLeft="@dimen/spacing_md"
+                />
         </LinearLayout>
 
     </LinearLayout>

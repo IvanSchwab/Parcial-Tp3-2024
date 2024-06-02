@@ -18,7 +18,8 @@
         <androidx.cardview.widget.CardView
             android:id="@+id/mastercardOffer"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            >
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -27,35 +28,31 @@
                 android:layout_marginVertical="@dimen/spacing_sm"
                 android:orientation="vertical">
 
-                <LinearLayout
+                <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="0"
-                    android:orientation="horizontal">
-
-                    <FrameLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1">
-
-                        <TextView
-                            android:id="@+id/masterBadge"
-                            style="@style/TealBadge"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:background="@drawable/text_view_rounded_md"
-                            android:text="@string/limited_badge_offer" />
-
-                    </FrameLayout>
+                    android:layout_height="match_parent"
+                    android:layout_weight="0">
 
                     <TextView
-                        android:id="@+id/placeholderFavMaster"
+                        android:id="@+id/masterBadge"
+                        style="@style/TealBadge"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Icono" />
+                        android:background="@drawable/text_view_rounded_md"
+                        android:text="@string/limited_badge_offer"
+                        android:textAppearance="@style/Overline"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        />
 
-                </LinearLayout>
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/favorite_filled"
+                        android:layout_alignParentEnd="true"/>
+
+                </RelativeLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -77,7 +74,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="0"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    >
 
                     <ImageView
                         android:id="@+id/masterCardPromotional"
@@ -97,18 +96,12 @@
                         android:text="@string/mastercard_description_offer"
                         android:textAppearance="@style/Caption" />
 
-                    <FrameLayout
+                    <ImageView
+                        android:id="@+id/imageView3"
                         android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1">
-
-                        <TextView
-                            android:id="@+id/textView7"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:text=">" />
-                    </FrameLayout>
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0"
+                        android:src="@drawable/chevron" />
 
                 </LinearLayout>
             </LinearLayout>
@@ -134,9 +127,9 @@
                     android:layout_weight="0"
                     android:orientation="horizontal">
 
-                    <FrameLayout
+                    <RelativeLayout
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="match_parent"
                         android:layout_weight="1">
 
                         <TextView
@@ -146,15 +139,21 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:background="@drawable/text_view_rounded_md"
-                            android:text="@string/limited_badge_offer" />
+                            android:text="@string/limited_badge_offer"
+                            android:textAppearance="@style/Overline"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            />
 
-                    </FrameLayout>
+                        <ImageView
+                            android:id="@+id/imageView2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/favorite"
+                            android:layout_alignParentEnd="true"/>
+                        />
 
-                    <TextView
-                        android:id="@+id/placeholderFavVisa"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Icono" />
+                    </RelativeLayout>
 
                 </LinearLayout>
 
@@ -178,13 +177,14 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="0"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    >
 
                     <ImageView
                         android:id="@+id/visaPromotional"
                         android:layout_width="104dp"
                         android:layout_height="71dp"
-                        android:layout_weight="0"
                         android:src="@drawable/visa" />
 
                     <TextView
@@ -198,19 +198,12 @@
                         android:text="@string/visa_description_offer"
                         android:textAppearance="@style/Caption" />
 
-                    <FrameLayout
+                    <ImageView
+                        android:id="@+id/imageView4"
                         android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1">
-
-                        <TextView
-                            android:id="@+id/placeholderDetailsVisa"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:text=">" />
-                    </FrameLayout>
-
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0"
+                        android:src="@drawable/chevron" />
                 </LinearLayout>
             </LinearLayout>
 

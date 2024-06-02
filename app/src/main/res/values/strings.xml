@@ -6,12 +6,13 @@
     <string name="user_bio_profile">I like the beach, mountains, forest and everything about nature! :)</string>
     <string name="payment_details_profile">Payment Details</string>
     <string name="referral_code_profile">Referral Code</string>
-    <string name="new_badge_profile">NEW</string>
+    <string name="new_badge_profile">New</string>
     <string name="settings_profile">Settings</string>
     <string name="logout_profile">Logout</string>
-    <string name="limited_badge_offer">LIMITED OFFER!</string>
+    <string name="limited_badge_offer">Limited offer!</string>
     <string name="mastercard_discount_title_offer">Get 20% discount with your Master credit cards</string>
     <string name="mastercard_description_offer">Use your mastercard with any transaction and get 20% discount instantly! </string>
     <string name="visa_title_offer">25% discount with your VISA credit or debit cards</string>
     <string name="visa_description_offer">Use your VISA credit or debit card with any transaction and get 25% discount instantly! </string>
+    <string name="icon_placeholder">x</string>
 </resources>
