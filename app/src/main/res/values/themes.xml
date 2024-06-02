@@ -34,6 +34,12 @@
         <item name="android:textColor">@color/black</item>
     </style>
 
+    <style name="H2">
+        <item name="android:fontFamily">@font/roboto</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:lineHeight">24dp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
 
     <style name="Subtitle">
         <item name="android:fontFamily">@font/roboto_medium</item>
@@ -42,10 +48,19 @@
         <item name="android:textColor">@color/black</item>
     </style>
 
-
     <style name="Body1">
         <item name="android:fontFamily">@font/inter</item>
         <item name="android:lineHeight">16dp</item>
+    </style>
+
+    <style name="Caption">
+        <item name="android:fontFamily">@font/roboto</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:lineHeight">16sp</item>
+    </style>
+
+    <style name="Light">
+        <item name="android:textColor">@color/black_500</item>
     </style>
 
 </resources>
