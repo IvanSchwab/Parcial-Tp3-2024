@@ -88,7 +88,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="@string/payment_details_profile"
-                android:layout_marginLeft="@dimen/spacing_md"
+                android:layout_marginLeft="@dimen/spacing_base"
                 />
         </LinearLayout>
 
@@ -126,7 +126,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="0"
                 android:text="@string/referral_code_profile"
-                android:layout_marginLeft="@dimen/spacing_md"
+                android:layout_marginLeft="@dimen/spacing_base"
 
                 />
 
@@ -180,7 +180,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="@string/settings_profile"
-                android:layout_marginLeft="@dimen/spacing_md"
+                android:layout_marginLeft="@dimen/spacing_base"
                 />
         </LinearLayout>
 
@@ -219,7 +219,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="@string/logout_profile"
-                android:layout_marginLeft="@dimen/spacing_md"
+                android:layout_marginLeft="@dimen/spacing_base"
                 />
         </LinearLayout>
 

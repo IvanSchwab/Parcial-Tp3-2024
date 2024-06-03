@@ -14,5 +14,16 @@
     <string name="mastercard_description_offer">Use your mastercard with any transaction and get 20% discount instantly! </string>
     <string name="visa_title_offer">25% discount with your VISA credit or debit cards</string>
     <string name="visa_description_offer">Use your VISA credit or debit card with any transaction and get 25% discount instantly! </string>
-    <string name="icon_placeholder">x</string>
+    <string name="limited_time_offer">Limited time offer!</string>
+    <string name="_25_discount_with_visa_credit_cards">25% discount with Visa credit cards</string>
+    <string name="_20_discount_for_mastercard_users">20% discount for Mastercard users</string>
+    <string name="text_one_way_button">One Way</string>
+    <string name="text_round_trip_button">Round trip</string>
+    <string name="departure_hint_search">Select Departure</string>
+    <string name="arrival_hint_search">Select Arrival</string>
+    <string name="date_hint_search">Select Date</string>
+    <string name="text_passengers_search">1 passenger</string>
+    <string name="text_class_search">Economy</string>
+    <string name="section_header_search">Offers</string>
+    <string name="text_search_button">Search</string>
 </resources>
