@@ -5,222 +5,242 @@
     android:id="@+id/frameLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragments.ProfileFragment">
+    tools:context=".fragments.ProfileFragment"
+    android:background="@color/white">
 
     <!-- TODO: Update blank fragment layout -->
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/white"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintStart_toStartOf="parent"
+       >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="224dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:src="@drawable/playa"
+                android:scaleType="fitXY"
+                android:layout_height="600dp"
+                android:translationY="-132dp"
+                />
+
+        </FrameLayout>-
 
         <ImageView
             android:id="@+id/avatarProfile"
             android:layout_width="@dimen/avatar_large"
             android:layout_height="@dimen/avatar_large"
-            android:src="@drawable/user_avatar" />
-
-        <TextView
-            android:id="@+id/userNameProfile"
-            style="@style/Title"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/user_name_profile" />
-
-        <TextView
-            android:id="@+id/userLocation"
-            style="@style/Body1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="2dp"
-            android:text="@string/user_location_profile"
-
-            android:textColor="@color/black_500" />
-
-        <TextView
-            android:id="@+id/userBioProfile"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:text="@string/user_bio_profile" />
-
-        <View
-            android:id="@+id/view"
-            style="@style/Divider"
-            android:layout_width="wrap_content"
-            android:layout_height="1dp" />
+            android:background="@drawable/circular"
+            android:clipToOutline="true"
+            android:src="@drawable/user_avatar"
+            android:translationY="-40dp"
+            android:layout_marginLeft="16dp"
+            />
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center_vertical"
-            >
-
-            <FrameLayout
-                android:layout_width="36dp"
-                android:layout_height="36dp"
-                android:layout_weight="0">
-
-                <View
-                    android:id="@+id/payment_container_profile"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/icon_container_rounded_md" />
-
-                <ImageView
-                    android:id="@+id/credit_icon_profile"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/credit_card_2"
-                    android:layout_gravity="center"/>
-
-            </FrameLayout>
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/spacing_md"
+            android:translationY="-40dp">
 
             <TextView
-                android:id="@+id/paymentDetails"
-                style="@style/Subtitle"
-                android:layout_width="wrap_content"
+                android:id="@+id/userNameProfile"
+                style="@style/Title"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@string/payment_details_profile"
-                android:layout_marginLeft="@dimen/spacing_md"
-                />
-        </LinearLayout>
+                android:text="@string/user_name_profile" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center_vertical"
-            android:layout_marginTop="@dimen/spacing_lg">
+            <TextView
+                android:id="@+id/userLocation"
+                style="@style/Body1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="@string/user_location_profile"
 
-            <FrameLayout
-                android:layout_width="36dp"
-                android:layout_height="36dp"
-                android:layout_weight="0">
+                android:textColor="@color/black_500" />
 
-                <View
-                    android:id="@+id/referal_container_profile"
+            <TextView
+                android:id="@+id/userBioProfile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/user_bio_profile" />
+
+            <View
+                android:id="@+id/view"
+                style="@style/Divider"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_weight="0">
+
+                    <View
+                        android:id="@+id/payment_container_profile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/icon_container_rounded_md" />
+
+                    <ImageView
+                        android:id="@+id/credit_icon_profile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/credit_card_2" />
+
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/paymentDetails"
+                    style="@style/Subtitle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/icon_container_rounded_md"
+                    android:layout_marginLeft="@dimen/spacing_base"
+                    android:layout_weight="1"
+                    android:text="@string/payment_details_profile" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_lg"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_weight="0">
+
+                    <View
+                        android:id="@+id/referal_container_profile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/icon_container_rounded_md" />
+
+                    <ImageView
+                        android:id="@+id/referal_icon_profile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/user_asking" />
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/referralCodeProfile"
+                    style="@style/Subtitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/spacing_base"
+                    android:layout_weight="0"
+                    android:text="@string/referral_code_profile"
+
                     />
 
-                <ImageView
-                    android:id="@+id/referal_icon_profile"
+                <TextView
+                    android:id="@+id/newBadgeProfile"
+                    style="@style/TealBadge"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/user_asking"
-                    android:layout_gravity="center"/>
-            </FrameLayout>
-
-            <TextView
-                android:id="@+id/referralCodeProfile"
-                style="@style/Subtitle"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="0"
-                android:text="@string/referral_code_profile"
-                android:layout_marginLeft="@dimen/spacing_md"
-
-                />
-
-            <TextView
-                android:id="@+id/newBadgeProfile"
-                style="@style/TealBadge"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="8dp"
-                android:layout_weight="0"
-                android:background="@drawable/text_view_rounded_md"
-                android:text="@string/new_badge_profile"
-                android:textAppearance="@style/Overline"
-
-                />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginTop="@dimen/spacing_lg"
-            android:gravity="center_vertical"
-            >
-
-            <FrameLayout
-                android:layout_width="36dp"
-                android:layout_height="36dp"
-                android:layout_weight="0">
-
-                <View
-                    android:id="@+id/settings_container_profile"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/icon_container_rounded_md"
+                    android:layout_marginLeft="8dp"
+                    android:layout_weight="0"
+                    android:background="@drawable/text_view_rounded_md"
+                    android:text="@string/new_badge_profile"
+                    android:textAppearance="@style/Overline"
                     />
 
-                <ImageView
-                    android:id="@+id/settings_icon_profile"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/settings_line"
-                    android:layout_gravity="center"/>
-            </FrameLayout>
+            </LinearLayout>
 
-            <TextView
-                android:id="@+id/settingsProfile"
-                style="@style/Subtitle"
-                android:layout_width="0dp"
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@string/settings_profile"
-                android:layout_marginLeft="@dimen/spacing_md"
-                />
-        </LinearLayout>
+                android:layout_marginTop="@dimen/spacing_lg"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginTop="@dimen/spacing_lg"
-            android:gravity="center_vertical"
-            >
+                <FrameLayout
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_weight="0">
 
-            <FrameLayout
-                android:layout_width="36dp"
-                android:layout_height="36dp"
-                android:layout_weight="0">
+                    <View
+                        android:id="@+id/settings_container_profile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/icon_container_rounded_md" />
 
-                <View
-                    android:id="@+id/logout_container_profile"
-                    android:layout_width="wrap_content"
+                    <ImageView
+                        android:id="@+id/settings_icon_profile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/settings_line" />
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/settingsProfile"
+                    style="@style/Subtitle"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/icon_container_rounded_md"
-                    />
+                    android:layout_marginLeft="@dimen/spacing_base"
+                    android:layout_weight="1"
+                    android:text="@string/settings_profile" />
+            </LinearLayout>
 
-                <ImageView
-                    android:id="@+id/logout_icon_profile"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/logout_half_circle_line"
-                    android:layout_gravity="center"/>
-            </FrameLayout>
-
-            <TextView
-                android:id="@+id/stringLogout"
-                style="@style/Subtitle"
-                android:layout_width="0dp"
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@string/logout_profile"
-                android:layout_marginLeft="@dimen/spacing_md"
-                />
+                android:layout_marginTop="@dimen/spacing_lg"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_weight="0">
+
+                    <View
+                        android:id="@+id/logout_container_profile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/icon_container_rounded_md" />
+
+                    <ImageView
+                        android:id="@+id/logout_icon_profile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/logout_half_circle_line" />
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/stringLogout"
+                    style="@style/Subtitle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/spacing_base"
+                    android:layout_weight="1"
+                    android:text="@string/logout_profile" />
+            </LinearLayout>
+
         </LinearLayout>
 
     </LinearLayout>

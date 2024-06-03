@@ -7,13 +7,15 @@
     android:layout_height="match_parent"
     tools:context=".fragments.OffersFragment"
     android:background="@color/black_50"
-    android:layout_margin="@dimen/container_margin"
+
     >
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:layout_margin="@dimen/container_margin"
+        >
 
         <androidx.cardview.widget.CardView
             android:id="@+id/mastercardOffer"
@@ -24,7 +26,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginHorizontal="@dimen/spacing_md"
+                android:layout_marginHorizontal="@dimen/spacing_base"
                 android:layout_marginVertical="@dimen/spacing_sm"
                 android:orientation="vertical">
 
@@ -112,7 +114,7 @@
             android:id="@+id/visaOffer"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/spacing_md">
+            android:layout_marginTop="@dimen/spacing_base">
 
             <LinearLayout
                 android:layout_width="match_parent"
