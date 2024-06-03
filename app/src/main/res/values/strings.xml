@@ -26,4 +26,6 @@
     <string name="text_class_search">Economy</string>
     <string name="section_header_search">Offers</string>
     <string name="text_search_button">Search</string>
+    <string name="preference_category">Generales</string>
+    <string name="preference_dark_mode">Modo osucro</string>
 </resources>
