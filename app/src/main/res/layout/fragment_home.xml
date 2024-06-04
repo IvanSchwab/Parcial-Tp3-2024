@@ -6,10 +6,14 @@
     android:layout_width="match_parent"
     android:scrollbars="none"
     android:layout_height="match_parent"
-    tools:context=".fragments.HomeFragment">
-<androidx.constraintlayout.widget.ConstraintLayout
+    tools:context=".fragments.HomeFragment"
+    app:layout_constraintTop_toBottomOf="@id/offersLabel"
+    android:paddingTop="?attr/actionBarSize">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content">
 
     <androidx.cardview.widget.CardView
         android:id="@+id/paris_card"
@@ -20,13 +24,13 @@
         app:cardElevation="4dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        >
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="200dp">
 
-            <!-- Image of Paris -->
             <ImageView
 
                 android:id="@+id/image_paris"
@@ -35,7 +39,6 @@
                 android:scaleType="centerCrop"
                 android:src="@drawable/paris" />
 
-            <!-- Text "Paris" -->
             <TextView
                 android:id="@+id/text_paris"
                 android:layout_width="wrap_content"
@@ -48,7 +51,6 @@
                 android:textSize="24sp"
                 android:textStyle="bold" />
 
-            <!-- Text "FROM" -->
             <TextView
                 android:id="@+id/text_from"
                 android:layout_width="wrap_content"
@@ -62,7 +64,6 @@
                 android:textSize="12sp"
                 android:textStyle="bold" />
 
-            <!-- Price "$1299" -->
             <TextView
                 android:id="@+id/text_price"
                 android:layout_width="wrap_content"
@@ -76,7 +77,6 @@
                 android:textSize="30sp"
                 android:textStyle="bold" />
 
-            <!-- Heart icon -->
             <ImageView
                 android:id="@+id/icon_heart"
                 android:layout_width="28dp"
@@ -96,7 +96,10 @@
         app:layout_constraintTop_toBottomOf="@id/paris_card"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:id="@+id/trending">
+        android:id="@+id/trending"
+        >
+
+
 
         <ImageView
             android:id="@+id/image_base"

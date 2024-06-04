@@ -6,6 +6,7 @@
         <item name="textAppearanceButton">@style/textAppearanceButton</item>
         <item name="materialButtonStyle"> @style/roundedButton</item>
         <item name="textInputStyle">@style/MyTextInputLayout</item>
+        <item name="android:statusBarColor">@color/white</item>
     </style>
 
     <style name="Theme.ParcialTp32024" parent="Base.Theme.ParcialTp32024" />

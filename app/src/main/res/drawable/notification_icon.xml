@@ -1,0 +1,29 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <group
+        android:name="Iconly/Light/Notification"
+        android:translateX="0"
+        android:translateY="0">
+        <group
+            android:name="Notification">
+            <path
+                android:name="Stroke 1"
+                android:fillType="evenOdd"
+                android:pathData="M12,17.8476C17.6392,17.8476 20.2481,17.1242 20.5,14.2205C20.5,11.3188 18.6812,11.5054 18.6812,7.94511C18.6812,5.16414 16.0452,2 12,2C7.95477,2 5.31885,5.16414 5.31885,7.94511C5.31885,11.5054 3.5,11.3188 3.5,14.2205C3.75295,17.1352 6.36177,17.8476 12,17.8476Z"
+                android:strokeColor="#191919"
+                android:strokeWidth="1.5"
+                android:strokeLineCap="round"
+                android:strokeLineJoin="round" />
+            <path
+                android:name="Stroke 3"
+                android:pathData="M14.6881,19.7667C13.1563,21.9593 10.7667,21.9853 9.22021,19.7667"
+                android:strokeColor="#191919"
+                android:strokeWidth="1.5"
+                android:strokeLineCap="round"
+                android:strokeLineJoin="round" />
+        </group>
+    </group>
+</vector>
