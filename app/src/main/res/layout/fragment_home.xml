@@ -121,7 +121,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/flight"
-            android:textColor="#000000"
             android:fontFamily="@font/inter"
             android:textSize="15sp"
             android:layout_marginTop="32dp" />
@@ -145,7 +144,6 @@
                 android:text="@string/trending_destinations"
                 android:fontFamily="@font/inter"
                 android:textSize="18sp"
-                android:textColor="#000000"
                 android:textStyle="bold" />
 
             <TextView
@@ -207,7 +205,6 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/boracay"
-                        android:textColor="#000000"
                         android:textSize="16sp"
                         android:textStyle="bold" />
 
@@ -215,7 +212,7 @@
                         android:layout_width="59dp"
                         android:layout_height="wrap_content"
                         android:text="@string/philippines"
-                        android:textColor="#000000"
+                        android:textColor="@color/black"
                         android:textSize="12sp" />
 
                     <TextView
@@ -259,7 +256,6 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
                         android:text="@string/baros"
-                        android:textColor="#000000"
                         android:textSize="16sp"
                         android:textStyle="bold" />
 
@@ -269,7 +265,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
                         android:text="@string/maldives"
-                        android:textColor="#000000"
+                        android:textColor="@color/black"
                         android:textSize="14sp" />
 
 
@@ -314,7 +310,6 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
                         android:text="@string/bali"
-                        android:textColor="#000000"
                         android:textSize="16sp"
                         android:textStyle="bold" />
 
@@ -323,8 +318,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
+                        android:textColor="@color/black"
                         android:text="@string/indonesia"
-                        android:textColor="#000000"
                         android:textSize="14sp" />
 
 
@@ -369,7 +364,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
                         android:text="@string/palawan"
-                        android:textColor="#000000"
+                        android:textColor="@color/black"
                         android:textSize="16sp"
                         android:textStyle="bold" />
 
@@ -379,7 +374,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
                         android:text="@string/philippines"
-                        android:textColor="#000000"
+                        android:textColor="@color/black"
                         android:textSize="14sp" />
 
 
@@ -454,7 +449,6 @@
                     android:layout_marginEnd="@dimen/spacing_md"
                     android:layout_toEndOf="@id/masterCardLogo"
                     android:text="@string/_20_discount_for_mastercard_users"
-                    android:textColor="@android:color/black"
                     android:textSize="16sp" />
 
 
@@ -502,7 +496,6 @@
                         android:layout_marginEnd="@dimen/spacing_md"
                         android:layout_toEndOf="@id/visaLogo"
                         android:text="@string/_25_discount_with_visa_credit_cards"
-                        android:textColor="@android:color/black"
                         android:textSize="16sp" />
 
 
