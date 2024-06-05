@@ -39,7 +39,7 @@
             android:layout_height="@dimen/avatar_large"
             android:background="@drawable/circular"
             android:clipToOutline="true"
-            android:src="@drawable/user_avatar"
+            android:src="@drawable/avatar"
             android:translationY="-40dp"
             android:layout_marginLeft="16dp"
             />
