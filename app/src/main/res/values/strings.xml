@@ -28,5 +28,8 @@
     <string name="text_search_button">Search</string>
     <string name="preference_category">Generales</string>
     <string name="preference_dark_mode">Modo osucro</string>
-    <string name="view_details_button">View Details</string>
+    <string name="details_button_item">View Details</string>
+    <string name="overview_subtitle_details">Overview</string>
+    <string name="photos_subtitle_details">Photos</string>
+    <string name="book_button_details">Book now</string>
 </resources>

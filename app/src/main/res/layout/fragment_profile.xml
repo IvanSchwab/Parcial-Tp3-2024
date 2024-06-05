@@ -29,12 +29,12 @@
             <ImageView
                 android:layout_width="match_parent"
                 android:src="@drawable/playa"
-                android:scaleType="fitXY"
+                android:scaleType="centerCrop"
                 android:layout_height="600dp"
                 android:translationY="-132dp"
                 />
 
-        </FrameLayout>-
+        </FrameLayout>
 
         <ImageView
             android:id="@+id/avatarProfile"
@@ -42,7 +42,7 @@
             android:layout_height="@dimen/avatar_large"
             android:background="@drawable/circular"
             android:clipToOutline="true"
-            android:src="@drawable/user_avatar"
+            android:src="@drawable/avatar"
             android:translationY="-40dp"
             android:layout_marginLeft="16dp"
             />
@@ -57,14 +57,14 @@
 
             <TextView
                 android:id="@+id/userNameProfile"
-                style="@style/Title"
+                android:textAppearance="@style/Title"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/user_name_profile" />
 
             <TextView
                 android:id="@+id/userLocation"
-                style="@style/Body1"
+                android:textAppearance="@style/Body1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="2dp"
@@ -77,7 +77,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:text="@string/user_bio_profile" />
+                android:text="@string/user_bio_profile"
+                android:textAppearance="@style/Body1"/>
 
             <View
                 android:id="@+id/divProfile"
@@ -113,7 +114,7 @@
 
                 <TextView
                     android:id="@+id/paymentDetails"
-                    style="@style/Subtitle"
+                    android:textAppearance="@style/Subtitle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="@dimen/spacing_base"
@@ -149,7 +150,7 @@
 
                 <TextView
                     android:id="@+id/referralCodeProfile"
-                    style="@style/Subtitle"
+                    android:textAppearance="@style/Subtitle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="@dimen/spacing_base"
@@ -200,7 +201,7 @@
 
                 <TextView
                     android:id="@+id/settingsProfile"
-                    style="@style/Subtitle"
+                    android:textAppearance="@style/Subtitle"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="@dimen/spacing_base"
@@ -236,7 +237,7 @@
 
                 <TextView
                     android:id="@+id/stringLogout"
-                    style="@style/Subtitle"
+                    android:textAppearance="@style/Subtitle"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="@dimen/spacing_base"
