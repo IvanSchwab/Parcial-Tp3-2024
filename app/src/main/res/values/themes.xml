@@ -46,6 +46,17 @@
         <item name="cornerSize">24dp</item>
     </style>
 
+
+    <style name="grayBadge">
+        <item name="android:background">@color/black_200</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:paddingTop">2dp</item>
+        <item name="android:paddingBottom">2dp</item>
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">24dp</item>
+    </style>
+
     <style name="textAppearanceButton" parent="TextAppearance.MaterialComponents.Button">
         <item name="textAllCaps">false</item>
         <item name="android:fontFamily">@font/inter_semibold</item>
@@ -57,6 +68,13 @@
     <style name="Title">
         <item name="android:fontFamily">@font/inter_bold</item>
         <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="H1">
+        <item name="android:fontFamily">@font/inter_bold</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:lineHeight">32sp</item>
         <item name="android:textColor">@color/black</item>
     </style>
 
