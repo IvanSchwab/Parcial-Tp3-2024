@@ -77,7 +77,7 @@
                 android:text="@string/user_bio_profile" />
 
             <View
-                android:id="@+id/view"
+                android:id="@+id/divProfile"
                 style="@style/Divider"
                 android:layout_width="wrap_content"
                 android:layout_height="1dp" />
