@@ -1,14 +1,313 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout3"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragments.SearchFragment">
+    tools:context=".fragments.SearchFragment"
+    android:background="@color/background"
+    >
+    <androidx.constraintlayout.widget.ConstraintLayout
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_margin="@dimen/container_margin"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:orientation="vertical">
 
-</FrameLayout>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="8dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/spacing_md">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:background="@drawable/tabs_background"
+                    android:paddingVertical="@dimen/spacing_xs"
+                    android:paddingHorizontal="@dimen/spacing_xs"
+                    >
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/text_one_way_button"
+                        android:textColor="@color/white"
+                        android:background="@drawable/active_tab_background"
+                        android:gravity="center"
+                        android:paddingVertical="@dimen/spacing_md"
+                        android:textAppearance="@style/Body1Medium"
+                        />
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/black_500"
+                        android:text="@string/text_round_trip_button"
+                        android:gravity="center"
+                        android:paddingVertical="@dimen/spacing_md"
+                        android:textAppearance="@style/Body1"
+                        />
+                </LinearLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_lg"
+                    android:hint="@string/departure_hint_search"
+                    android:textColorHint="@color/black_500"
+                    app:startIconDrawable="@drawable/flight_take_off">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="@dimen/spacing_2xl"
+                        app:boxStrokeColor="@color/black_700" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_md"
+                    android:textColorHint="@color/black_500"
+                    app:boxStrokeColor="@color/black_700"
+                    app:startIconDrawable="@drawable/flight_land">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/arrival_hint_search"
+                        android:paddingStart="@dimen/spacing_2xl" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_md"
+                    android:hint="@string/date_hint_search"
+                    android:textColorHint="@color/black_500"
+                    app:startIconDrawable="@drawable/calendar_icon">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="@dimen/spacing_2xl"
+                        app:boxStrokeColor="@color/black_700" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_md"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColorHint="@color/black_500"
+                        app:startIconDrawable="@drawable/group">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="@dimen/spacing_2xl"
+                            android:text="@string/text_passengers_search"
+                            app:boxStrokeColor="@color/black_700"
+
+                            />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <Space
+                        android:layout_width="@dimen/spacing_md"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColorHint="@color/black_500"
+                        app:startIconDrawable="@drawable/thumb">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="@dimen/spacing_2xl"
+                            android:text="@string/text_class_search"
+                            android:textColorHint="@color/black_500"
+                            app:boxStrokeColor="@color/black_700"
+
+                            />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+
+
+                <Button
+                    android:id="@+id/ButtonSearch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_base"
+                    android:text="@string/text_search_button" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/spacing_2xl">
+
+            <TextView
+                android:id="@+id/offersLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/section_header_search"
+                android:textColor="@color/black"
+                android:textAppearance="@style/SectionHeader"/>
+
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none"
+                android:layout_marginTop="@dimen/spacing_md"
+                app:layout_constraintTop_toBottomOf="@id/offersLabel"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <LinearLayout
+                    android:layout_marginStart="16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/mastercardOffer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        app:cardCornerRadius="8dp">
+
+                        <RelativeLayout
+                            android:layout_width="293dp"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/spacing_base">
+
+
+                            <ImageView
+                                android:id="@+id/masterCardLogo"
+                                android:layout_width="100dp"
+                                android:layout_height="60dp"
+                                android:layout_alignParentStart="true"
+                                android:src="@drawable/mastercard" />
+
+
+                            <TextView
+                                android:id="@+id/masterCardTitle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/spacing_base"
+                                android:layout_marginEnd="@dimen/spacing_xs"
+                                android:layout_toEndOf="@id/masterCardLogo"
+                                android:text="@string/_20_discount_for_mastercard_users"
+                                android:textColor="@color/black"
+                                android:textSize="16sp" />
+
+
+                            <TextView
+                                android:id="@+id/limitedTimeOffer"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/masterCardTitle"
+                                android:layout_marginStart="@dimen/spacing_base"
+                                android:layout_marginTop="@dimen/spacing_xs"
+                                android:layout_toEndOf="@id/masterCardLogo"
+                                android:text="@string/limited_time_offer"
+                                android:textColor="@color/black_500"
+                                android:textSize="12sp" />
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/visaOffer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        app:cardCornerRadius="8dp">
+
+                        <RelativeLayout
+                            android:layout_width="293dp"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/spacing_base">
+
+
+                            <ImageView
+                                android:id="@+id/visaLogo"
+                                android:layout_width="100dp"
+                                android:layout_height="60dp"
+                                android:layout_alignParentStart="true"
+                                android:src="@drawable/visa" />
+
+
+                            <TextView
+                                android:id="@+id/visaTitle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/spacing_base"
+                                android:layout_toEndOf="@id/visaLogo"
+                                android:text="@string/_25_discount_with_visa_credit_cards"
+                                android:textColor="@color/black"
+                                android:textSize="16sp" />
+
+
+                            <TextView
+                                android:id="@+id/limitedTimeOfferVisa"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/visaTitle"
+                                android:layout_marginStart="@dimen/spacing_base"
+                                android:layout_marginTop="@dimen/spacing_xs"
+                                android:layout_toEndOf="@id/visaLogo"
+                                android:text="@string/limited_time_offer"
+                                android:textColor="@color/black_500"
+                                android:textSize="12sp" />
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

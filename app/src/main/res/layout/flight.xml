@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/flight_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:backgroundTintMode="add"
+    app:cardCornerRadius="@dimen/spacing_sm"
+    app:cardElevation="8dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="@dimen/spacing_md"
+            >
+
+            <ImageView
+                android:id="@+id/airlineLogo"
+                android:layout_width="48dp"
+                android:layout_height="32dp"
+                tools:srcCompat="@tools:sample/avatars"
+                android:scaleType="fitXY"
+                />
+
+            <TextView
+                android:id="@+id/airlineName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="United Airlines"
+                android:textColor="@color/black_500"
+                android:layout_marginStart="@dimen/spacing_md"
+                />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                app:srcCompat="@drawable/timer" />
+
+            <TextView
+                android:id="@+id/totalDuration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:text="01 hr 40 min"
+                android:layout_marginStart="@dimen/spacing_xs"
+                android:textAppearance="@style/Caption"
+                android:textColor="@color/black_500"/>
+
+        </LinearLayout>
+        <View
+            android:id="@+id/divFlightItem"
+            style="@style/Divider"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:orientation="horizontal"
+            android:paddingHorizontal="@dimen/spacing_md">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/departureAirportId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="EZE"
+                    android:textAppearance="@style/Body1Medium"
+                    android:textColor="@color/blue_700" />
+
+                <TextView
+                    android:id="@+id/departureAirportName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ezeiza Ar" />
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0">
+
+                <ImageView
+                    android:id="@+id/departureOval"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/oval" />
+            </FrameLayout>
+
+            <ImageView
+                android:id="@+id/flightDirectionIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:layout_marginHorizontal="@dimen/spacing_xl"
+                app:srcCompat="@drawable/flight_direction"
+                />
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0">
+
+                <ImageView
+                    android:id="@+id/arrivalOval"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/oval" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:orientation="vertical"
+
+                >
+
+                <TextView
+                    android:id="@+id/arrivalAirportId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="LAX"
+                    android:textAppearance="@style/Body1Medium"
+                    android:textColor="@color/blue_700" />
+
+                <TextView
+                    android:id="@+id/arrivalAirportName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Los Ángeles" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingHorizontal="@dimen/spacing_md"
+            android:paddingBottom="@dimen/spacing_md">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="@dimen/spacing_md"
+                android:backgroundTint="@color/black_50"
+                app:cardCornerRadius="@dimen/spacing_sm"
+                app:cardElevation="0dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/spacing_md">
+
+                    <ImageView
+                        android:id="@+id/classIconFlight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0"
+                        app:srcCompat="@drawable/chair" />
+
+                    <TextView
+                        android:id="@+id/travelClass"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Business Class"
+                        android:layout_marginStart="@dimen/spacing_sm"/>
+
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/pricePrefix"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0"
+                        android:text="From"
+                        android:textAppearance="@style/Caption"
+                        android:textColor="@color/black_500"/>
+
+                    <TextView
+                        android:id="@+id/flightPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0"
+                        android:text="$1128"
+                        android:layout_marginStart="@dimen/spacing_xs"
+                        android:textAppearance="@style/Body1Medium"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:id="@+id/detailsButtonFlight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_md"
+                android:layout_weight="1"
+                android:text="@string/details_button_item" />
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

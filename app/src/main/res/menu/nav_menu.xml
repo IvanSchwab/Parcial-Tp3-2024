@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="@string/profile"
+        android:id="@+id/profileFragment"
+        android:icon="@drawable/profile"/>
+
+    <item android:title="@string/notification"
+        android:id="@+id/notification"
+        android:icon="@drawable/notification_icon"/>
+
+    <item android:title="@string/get_help"
+        android:id="@+id/get_help"
+        android:icon="@drawable/get_help_icon"/>
+
+    <item android:title="@string/calendar"
+        android:id="@+id/calendar"
+        android:icon="@drawable/calendar_icon"/>
+
+    <item android:title="@string/settings_profile"
+        android:id="@+id/settingsFragment"
+        android:icon="@drawable/settings"/>
+
+</menu>
