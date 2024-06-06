@@ -22,7 +22,6 @@ class SearchFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         val navController = findNavController()
-
         view.findViewById<Button>(R.id.ButtonSearch).setOnClickListener {
             navController.navigate(R.id.action_searchFragment_to_resultsFragment)
         }
