@@ -43,6 +43,8 @@ android {
 }
 
 dependencies {
+    implementation(libs.androidx.navigation.fragment.ktx)
+    implementation(libs.androidx.navigation.ui.ktx)
     val room_version = "2.6.0"
 
     implementation("androidx.room:room-runtime:$room_version")
@@ -62,4 +64,6 @@ dependencies {
 
     implementation("androidx.core:core-splashscreen:1.0.1")
     implementation("de.hdodenhof:circleimageview:3.1.0")
+
+
 }

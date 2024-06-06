@@ -7,8 +7,8 @@
     android:scrollbars="none"
     android:layout_height="match_parent"
     tools:context=".fragments.HomeFragment"
-    app:layout_constraintTop_toBottomOf="@id/offersLabel"
-    android:paddingTop="?attr/actionBarSize">
+    app:layout_constraintTop_toBottomOf="@id/offersLabel">
+
 
     <androidx.constraintlayout.widget.ConstraintLayout
 
